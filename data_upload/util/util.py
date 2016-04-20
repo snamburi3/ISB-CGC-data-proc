@@ -263,7 +263,7 @@ def getTumorTypes(config, log):
     if config:
         if 'tumor_types' in config:
             process = config['tumor_types']
-            if 0 < len(process) and not (1 == len(process) and 'all' == process[0]):
+            if 0 < len(process) and not (1 == len(process) and 'all' == process[0]):  # todo: better way?
                 processAll = False
     if processAll:
         log.info('\tprocessing all tumor types')

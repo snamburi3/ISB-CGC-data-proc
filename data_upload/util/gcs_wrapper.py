@@ -35,7 +35,7 @@ def open_connection():
     global connection
     if connection:
         raise ValueError('the connection to GCS is already open')
-    connection = boto.gs.connection.GSConnection()
+    connection = boto.gs.connection.GSConnection()  # ?
 
 def close_connection():
     global connection
